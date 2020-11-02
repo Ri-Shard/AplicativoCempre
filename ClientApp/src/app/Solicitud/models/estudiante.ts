@@ -5,5 +5,5 @@ export class Estudiante {
     edad: number;
     semestre: number;
     correo : string;
-    hojadevida:bool;
+  //  hojadevida:bool;
 }

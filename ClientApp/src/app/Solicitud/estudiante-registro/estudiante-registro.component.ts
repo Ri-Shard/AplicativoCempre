@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Estudiante } from 'C:\Users\rikar\Desktop\Angular\Cempre\ClientApp\src\app\Solicitud\models\estudiante';
-import {EstudianteService} from "C:\Users\rikar\Desktop\Angular\Cempre\ClientApp\src\app\services\persona.service";
+import { Estudiante } from '../models/estudiante';
+import {EstudianteService} from "../../services/estudiante.service";
 
 @Component({
   selector: 'app-estudiante-registro',
@@ -15,13 +15,12 @@ estudiante: Estudiante;
   ngOnInit() {
     this.estudiante=new Estudiante();
   }
-  add(){
-    this.estudianteService.post(this.persona).subscribe(p => {
-      if (p!=null) {
-        alert('Solicitud Creada!');
-        this.estudiante = p;
-      }
-    })
-  }
+//  add(){
+//   this.estudianteService.post(this.estudiante).subscribe(p => {
+//      if (p!=null) {
+//        alert('Solicitud Creada!');       this.estudiante = p;
+//     }
+//    })
+//  }
 
 }

@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import {EstudianteConsultaComponent} from '.C:\Users\rikar\Desktop\Angular\Cempre\ClientApp\src\app\Solicitud\estudiante-consulta\estudiante-consulta.component';
-import {EstudianteRegistroComponent} from '.C:\Users\rikar\Desktop\Angular\Cempre\ClientApp\src\app\Solicitud\estudiante-registro\estudiante-registro.component';
+import {EstudianteConsultaComponent} from './Solicitud/estudiante-consulta/estudiante-consulta.component';
+import {EstudianteRegistroComponent} from './Solicitud/estudiante-registro/estudiante-registro.component';
 
 const routes: Routes = [
   {
@@ -23,7 +23,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
     RouterModule.forRoot(routes)
   ],
   exports:[RouterModule]

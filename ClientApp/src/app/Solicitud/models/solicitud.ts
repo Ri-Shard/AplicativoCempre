@@ -1,5 +1,5 @@
 export class Solicitud {
   identificacion: string;
-  estudiante : Estudiante;
+  //estudiante : Estudiante;
   estado: string;
 }
