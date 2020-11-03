@@ -12,9 +12,14 @@ estudiantes:Estudiante[];
   constructor(private estudianteService: EstudianteService) { }
 
   ngOnInit() {
-  //  this.estudianteService.get().subscribe(result => {
-  //    this.estudiantes = result;
-  //  })
+     this.get;
+   }
+
+   get(){
+     this.estudianteService.get().subscribe(result =>{
+       this.estudiantes = result;
+     });
+   }
   }
 
-}
+

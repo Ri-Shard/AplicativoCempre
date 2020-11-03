@@ -12,6 +12,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { EstudianteConsultaComponent } from './Solicitud/estudiante-consulta/estudiante-consulta.component';
 import { EstudianteRegistroComponent } from './Solicitud/estudiante-registro/estudiante-registro.component';
 import { AppRoutingModule } from './app-routing.module';
+import { EstudianteService } from './services/estudiante.service';
 
 @NgModule({
   declarations: [
@@ -28,13 +29,13 @@ import { AppRoutingModule } from './app-routing.module';
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: '/', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
     ]),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [EstudianteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

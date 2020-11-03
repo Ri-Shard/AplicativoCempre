@@ -13,14 +13,16 @@ estudiante: Estudiante;
   constructor(private estudianteService:EstudianteService) { }
 
   ngOnInit() {
-    this.estudiante=new Estudiante();
+    this.estudiante=new Estudiante;
   }
-//  add(){
-//   this.estudianteService.post(this.estudiante).subscribe(p => {
-//      if (p!=null) {
-//        alert('Solicitud Creada!');       this.estudiante = p;
-//     }
-//    })
-//  }
+  add(){
+    
+    this.estudianteService.post(this.estudiante).subscribe(p => {
+      if (p!=null) {
+        alert('Solicitud Creada!');
+        this.estudiante = p;
+      }
+    })
+    }
 
 }
